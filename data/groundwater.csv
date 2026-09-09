@@ -1,0 +1,13 @@
+state,district,rainfall_mm,recharge_mcm,extraction_mcm,groundwater_level_m,category
+Uttar Pradesh,Ghaziabad,650,120,95,18.4,Semi-Critical
+Uttar Pradesh,Agra,580,100,92,15.2,Critical
+Uttar Pradesh,Meerut,720,150,105,20.1,Semi-Critical
+Uttar Pradesh,Lucknow,850,180,110,25.4,Safe
+Uttar Pradesh,Varanasi,900,170,125,22.7,Semi-Critical
+Rajasthan,Jaipur,500,80,75,12.5,Critical
+Rajasthan,Jodhpur,320,55,60,8.4,Over-Exploited
+Maharashtra,Pune,700,140,100,19.2,Semi-Critical
+Karnataka,Bangalore,720,140,110,21.3,Semi-Critical
+Karnataka,Mysore,780,160,95,24.1,Safe
+Tamil Nadu,Chennai,1200,200,180,14.2,Critical
+Gujarat,Ahmedabad,600,110,105,16.8,Critical
