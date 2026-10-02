@@ -1,4 +1,4 @@
-.env/
+.env
 groundwater.db
 __pycache__/
 *.pyc

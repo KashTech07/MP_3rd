@@ -100,3 +100,36 @@ def get_districts():
     districts = cursor.fetchall()
     conn.close()
     return [row[0] for row in districts]
+
+def get_state_data(state):
+
+    conn = get_connection()
+    cursor = conn.cursor()
+
+    cursor.execute("""
+        SELECT state, district, rainfall_mm,
+               recharge_mcm, extraction_mcm,
+               groundwater_level_m, category
+        FROM groundwater
+        WHERE LOWER(state) = LOWER(?)
+    """, (state,))
+
+    rows = cursor.fetchall()
+
+    conn.close()
+
+    data = []
+
+    for row in rows:
+
+        data.append({
+            "state": row[0],
+            "district": row[1],
+            "rainfall_mm": row[2],
+            "recharge_mcm": row[3],
+            "extraction_mcm": row[4],
+            "groundwater_level_m": row[5],
+            "category": row[6]
+        })
+
+    return data

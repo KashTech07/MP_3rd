@@ -1,12 +1,7 @@
 from agent.graph import workflow
 
-
-query = {
-    "query": "What is the groundwater situation in Ghaziabad?",
-    "district": "Ghaziabad"
-}
-
-
-result = workflow.invoke(query)
+result = workflow.invoke({
+    "query": "analyze ground level water of agra?"
+})
 
 print(result["response"])
